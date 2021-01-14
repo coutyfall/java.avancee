@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="17.0" layoutY="39.0" prefHeight="444.0" prefWidth="550.0" style="-fx-background-color: yellow;">
+         <children>
+            <Text layoutX="26.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="libelle" />
+            <Text layoutX="234.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbre" />
+            <Text layoutX="64.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="liste des classes" />
+            <Text layoutX="396.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="liste des etudiants" />
+            <Button layoutX="437.0" layoutY="50.0" mnemonicParsing="false" text="Add" />
+            <TextField layoutX="64.0" layoutY="50.0" />
+            <TextField layoutX="275.0" layoutY="50.0" />
+            <TableView layoutX="26.0" layoutY="228.0" prefHeight="194.0" prefWidth="214.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="id" />
+                <TableColumn prefWidth="75.0" text="libelle" />
+                  <TableColumn prefWidth="75.0" text="Nbre" />
+              </columns>
+            </TableView>
+            <TableView layoutX="317.0" layoutY="222.0" prefHeight="194.0" prefWidth="214.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="id" />
+                  <TableColumn prefWidth="75.0" text="NomComplet" />
+                  <TableColumn prefWidth="75.0" text="tuteur" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

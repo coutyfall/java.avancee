@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="69.0" layoutY="85.0" prefHeight="410.0" prefWidth="573.0" style="-fx-background-color: yellow;">
+         <children>
+            <Text layoutX="63.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="liste Professeur" />
+            <Text layoutX="367.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modules Enseignes" />
+            <Text layoutX="269.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe" />
+            <TextField layoutX="320.0" layoutY="24.0" />
+            <TableView layoutX="22.0" layoutY="160.0" prefHeight="199.0" prefWidth="228.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="id" />
+                <TableColumn prefWidth="75.0" text="Nom" />
+                  <TableColumn prefWidth="75.0" text="Grade" />
+              </columns>
+            </TableView>
+            <TableView layoutX="349.0" layoutY="160.0" prefHeight="189.0" prefWidth="149.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="libelle" />
+                  <TableColumn prefWidth="75.0" text="classe" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
