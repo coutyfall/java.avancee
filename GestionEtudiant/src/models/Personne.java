@@ -12,6 +12,9 @@ package models;
 public abstract class Personne {
     protected int id;
     protected String nomcomplet;
+    protected String type;
+    private String login;
+    private String mdp;
 
     public Personne() {
     }
@@ -24,6 +27,28 @@ public abstract class Personne {
     public Personne(String nomcomplet) {
         this.nomcomplet = nomcomplet;
     }
+
+    public Personne(String login, String mdp) {
+        this.login = login;
+        this.mdp = mdp;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getMdp() {
+        return mdp;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
+    }
+    
 
     public int getId() {
         return id;
@@ -44,6 +69,14 @@ public abstract class Personne {
     @Override
     public String toString() {
         return "Personne{" + "id=" + id + ", nomcomplet=" + nomcomplet + '}';
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
     
     

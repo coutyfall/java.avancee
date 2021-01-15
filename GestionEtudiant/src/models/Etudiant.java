@@ -18,15 +18,18 @@ public class Etudiant  extends Personne{
     
     public Etudiant() {
         super();
+        type="Etudiant";
     }
 
     public Etudiant(String tuteur, String nomcomplet) {
         super(nomcomplet);
         this.tuteur = tuteur;
+         type="Etudiant";
     }
 
     public Etudiant(int id, String nomcomplet) {
         super(id, nomcomplet);
+         type="Etudiant";
     }
 
     public String getTuteur() {
